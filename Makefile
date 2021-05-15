@@ -19,7 +19,9 @@ SRCS =	ft_bzero.c \
 		ft_memmove.c \
 		ft_memset.c \
 		ft_strlen.c \
-		teste_memset.c
+		ft_strlcpy.c \
+		libft.h \
+		testes.c
 
 OBJS = ${SRCS: .c=.o}
 
@@ -34,7 +36,7 @@ CFLAGS = -Wall -Wextra -Werror
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
-	${CC} ${CFLAGS} -o ${NAME} ${OBJS}
+	${CC} ${CFLAGS} -o ${NAME} ${OBJS} libft.h
 
 all:		${NAME}
 

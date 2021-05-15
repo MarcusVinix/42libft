@@ -17,7 +17,7 @@ size_t	strlcpy(char *dst, const char *src, size_t size)
 	size_t	len;
 
 	len = 0;
-	if ((size - 1) >= 0)
+	if ((size - 1) > 0)
 	{
 		while (len < (size - 1) && src[len])
 		{
