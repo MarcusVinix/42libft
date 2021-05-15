@@ -25,7 +25,7 @@ SRCS =	ft_bzero.c \
 
 OBJS = ${SRCS: .c=.o}
 
-name = libft
+NAME = libft
 
 CC = gcc
 RM = rm -f 
@@ -36,7 +36,7 @@ CFLAGS = -Wall -Wextra -Werror
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
-	${CC} ${CFLAGS} -o ${NAME} ${OBJS} libft.h
+	${CC} ${CFLAGS} -o ${NAME} ${OBJS}
 
 all:		${NAME}
 
