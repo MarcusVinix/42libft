@@ -23,6 +23,7 @@ SRCS =	ft_bzero.c \
 		ft_strlcat.c \
 		ft_strchr.c \
 		ft_strrchr.c \
+		ft_strnstr.c \
 		libft.h \
 		testes.c
 
