@@ -14,11 +14,11 @@
 
 char	*ft_strnstr(const char *s, const char *find, size_t slen)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	if (*find == '\0')
-		return (s);
+		return ((char *)s);
 	i = 0;
 	while (s[i] && i < slen)
 	{

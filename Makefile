@@ -28,23 +28,22 @@ SRCS =	ft_bzero.c \
 		libft.h \
 		testes.c
 
-OBJS = ${SRCS: .c=.o}
+OBJS = $(SRCS:.c=.o)
 
-NAME = libft
+NAME = libft.a
 
 CC = gcc
 RM = rm -f 
 
 CFLAGS = -Wall -Wextra -Werror
 
-.c.o:
-	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
+all:		$(NAME)
 
-${NAME}:	${OBJS}
-	${CC} ${CFLAGS} -o ${NAME} ${OBJS}
+$(NAME):	$(OBJS)
+	ar -rcs $(NAME) $(OBJS)
 
-all:		${NAME}
-
+$(OBJS):	$(SRCS)
+	$(CC) $(CFLAGS) -c $(SRCS)
 
 clean:
 	${RM} ${OBJS}
