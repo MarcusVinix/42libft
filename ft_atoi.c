@@ -1,21 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mavinici <mavinici@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/17 23:05:25 by mavinici          #+#    #+#             */
-/*   Updated: 2021/05/17 23:05:25 by mavinici         ###   ########.fr       */
+/*   Created: 2021/05/18 20:02:00 by mavinici          #+#    #+#             */
+/*   Updated: 2021/05/18 20:02:00 by mavinici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_ignore(char c)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
+	if ((c >= 9 && c <= 13) || c == 32)
 		return (1);
-	else
-		return (0);
+	return (0);
+}
+
+int	ft_atoi(const char *nptr)
+{
+	int	sign;
+	int	number;
+
+	sign = 1;
+	number = 0;
+	if (ft_ignore(*nptr) == 1)
+		nptr++;
+	while (*nptr == '-' || *nptr == '+')
+		if (*nptr++ == '-')
+			sign *= -1;
+	while (ft_isdigit(*nptr) == 1)
+		number = number * 10 + (*nptr++ - '0');
+	return (number * sign);
 }
