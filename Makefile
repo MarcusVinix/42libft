@@ -25,8 +25,12 @@ SRCS =	ft_bzero.c \
 		ft_strrchr.c \
 		ft_strnstr.c \
 		ft_strncmp.c \
-		libft.h \
-		testes.c
+		ft_isdigit.c \
+		ft_isalnum.c \
+		ft_isascii.c \
+		ft_isprint.c \
+		ft_toupper.c \
+		ft_tolower.c 
 
 OBJS = $(SRCS:.c=.o)
 
@@ -44,6 +48,9 @@ $(NAME):	$(OBJS)
 
 $(OBJS):	$(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
+
+comp: 
+	$(CC) $(CFLAGS) $(SRCS)
 
 clean:
 	${RM} ${OBJS}

@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mavinici <mavinici@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/17 22:40:07 by mavinici          #+#    #+#             */
-/*   Updated: 2021/05/17 22:40:07 by mavinici         ###   ########.fr       */
+/*   Created: 2021/05/17 23:05:25 by mavinici          #+#    #+#             */
+/*   Updated: 2021/05/17 23:05:25 by mavinici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+int	ft_isalnum(int c)
 {
-	
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	else 
-		return (0);
+		return(0);
 }
-
