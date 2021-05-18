@@ -23,12 +23,13 @@ char	*ft_strnstr(const char *s, const char *find, size_t slen)
 	while (s[i] && i < slen)
 	{
 		j = 0;
-		while (s[j + i] == find[j])
+		while (s[j + i] == find[j] && (i + j < slen))
 		{
 			if (find[j + 1] == '\0')
 				return ((char *)s + i);
 			j++;
 		}
+		i++;
 	}
 	return (NULL);
 }
