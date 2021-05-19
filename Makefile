@@ -51,7 +51,7 @@ $(OBJS):	$(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 
 comp: 
-	$(CC) $(CFLAGS) $(SRCS)
+	$(CC) $(CFLAGS) $(SRCS) testes.c
 
 clean:
 	${RM} ${OBJS}
