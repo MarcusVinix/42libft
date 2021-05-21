@@ -2,7 +2,9 @@
 
 # define	LIBFT_H
 //default library
-# include	<string.h>
+# include	<bsd/string.h>//remove before send to moulinete
+# include	<stdlib.h>
+# include 	<limits.h>
 
 //my own functions
 int		ft_isalpha(char c);
@@ -27,4 +29,5 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *nptr);
+void	*ft_calloc(size_t nmemb, size_t size);
 #endif

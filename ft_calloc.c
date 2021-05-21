@@ -1,37 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mavinici <mavinici@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/18 20:02:00 by mavinici          #+#    #+#             */
-/*   Updated: 2021/05/18 20:02:00 by mavinici         ###   ########.fr       */
+/*   Created: 2021/05/18 22:32:06 by mavinici          #+#    #+#             */
+/*   Updated: 2021/05/18 22:32:06 by mavinici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_ignore(char c)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	if ((c >= 9 && c <= 13) || c == ' ')
-		return (1);
-	return (0);
-}
+	size_t	*ptr;
+	size_t	total;
 
-int	ft_atoi(const char *nptr)
-{
-	int	sign;
-	int	number;
-
-	sign = 1;
-	number = 0;
-	while (ft_ignore(*nptr) == 1)
-		nptr++;
-	if (*nptr == '-' || *nptr == '+')
-		if (*nptr++ == '-')
-			sign *= -1;
-	while (ft_isdigit(*nptr) == 1)
-		number = number * 10 + (*nptr++ - '0');
-	return (number * sign);
+	total = nmemb * size;
+	if (total > INT_MAX)
+		return (NULL);
+	if (!(ptr = malloc(total)))
+		return (NULL);
+	ft_memset(ptr, 0, total);
+	return ((void *)ptr);
 }

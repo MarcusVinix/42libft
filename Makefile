@@ -31,13 +31,14 @@ SRCS =	ft_bzero.c \
 		ft_isprint.c \
 		ft_toupper.c \
 		ft_tolower.c \
-		ft_atoi.c
+		ft_atoi.c \
+		ft_calloc.c
 
 OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
 
-CC = gcc
+CC = clang
 RM = rm -f 
 
 CFLAGS = -Wall -Wextra -Werror
@@ -51,13 +52,13 @@ $(OBJS):	$(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 
 comp: 
-	$(CC) $(CFLAGS) $(SRCS) testes.c
+	$(CC) -lbsd $(CFLAGS) $(SRCS) testes.c && ./a.out
 
 clean:
-	${RM} ${OBJS}
+	$(RM) $(OBJS)
 
 fclean:	clean
-	${RM} ${NAME}
+	$(RM) $(NAME)
 
 re:		fclean all
 
