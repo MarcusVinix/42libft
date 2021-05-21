@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_ignore(char c)
+static int	ft_ignore(char c)
 {
 	if ((c >= 9 && c <= 13) || c == ' ')
 		return (1);

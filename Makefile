@@ -33,7 +33,7 @@ SRCS =	ft_bzero.c \
 		ft_tolower.c \
 		ft_atoi.c \
 		ft_calloc.c \
-		ft_strdup.c
+		ft_strdup.c \
 
 OBJS = $(SRCS:.c=.o)
 
@@ -52,14 +52,14 @@ $(NAME):	$(OBJS)
 $(OBJS):	$(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 
-comp: 
+comp:
 	$(CC) -lbsd $(CFLAGS) $(SRCS) testes.c && ./a.out
 
 clean:
-	$(RM) $(OBJS)
+	${RM} ${OBJS}
 
 fclean:	clean
-	$(RM) $(NAME)
+	${RM} ${NAME}
 
 re:		fclean all
 

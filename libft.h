@@ -6,7 +6,7 @@
 # include	<stdlib.h>
 # include 	<limits.h>
 
-//my own functions
+//mandatory functions
 int		ft_isalpha(char c);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
