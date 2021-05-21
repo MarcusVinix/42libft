@@ -32,7 +32,8 @@ SRCS =	ft_bzero.c \
 		ft_toupper.c \
 		ft_tolower.c \
 		ft_atoi.c \
-		ft_calloc.c
+		ft_calloc.c \
+		ft_strdup.c
 
 OBJS = $(SRCS:.c=.o)
 
