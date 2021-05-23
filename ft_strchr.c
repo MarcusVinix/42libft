@@ -14,18 +14,10 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
-	char	*s_s;
+	size_t		i;
 
-	i = 0;
-	s_s = (char *)s;
-	while (s_s[i])
-	{
-		if (s_s[i] == c)
-			return (s_s + i);
-		i++;
-	}
-	if (s_s[i] == c)
-		return (s_s + i);
-	return (NULL);
+	i = ft_strlen(s);
+	if (s[i] == c)
+		return ((char *)s + i);
+	return (ft_memchr(s, c, i));
 }
