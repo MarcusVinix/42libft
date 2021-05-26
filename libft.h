@@ -2,11 +2,9 @@
 
 # define	LIBFT_H
 //default library
-//remove before send to moulinete
 # include	<stdlib.h>
 # include	<unistd.h>
 # include	<limits.h>
-# include	<stdio.h>
 
 //mandatory functions
 int		ft_isalpha(char c);

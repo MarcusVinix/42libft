@@ -63,7 +63,7 @@ $(OBJS):	$(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 
 comp:
-	$(CC) -lbsd $(CFLAGS) $(SRCS) testes.c && ./a.out | cat -e
+	$(CC) -lbsd $(CFLAGS) $(SRCS) testes.c && ./a.out
 
 clean:
 	${RM} ${OBJS}
