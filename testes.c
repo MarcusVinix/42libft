@@ -211,8 +211,8 @@ int	main(void)
 
 	printf("Expected: %s  | Received: %s\n", test_strrchr2, teste_strrchr2);
 
-	char *teste_strrchr3 = ft_strrchr(dest_strrchr2, 0);
-	char *test_strrchr3 = strrchr(dest_strrchr, 0);
+	char *teste_strrchr3 = ft_strrchr(dest_strrchr2, '\0');
+	char *test_strrchr3 = strrchr(dest_strrchr, '\0');
 
 	printf("Expected: %s  | Received: %s\n\n", test_strrchr3, teste_strrchr3);
 
@@ -324,6 +324,24 @@ int	main(void)
 	int test_atoi2 = ft_atoi("\n54");
 	printf("Expected: %d | Received: %d\n", test_atoi1, test_atoi2);
 
+	int test_atoi3 = atoi(ft_itoa(INT_MAX));
+	int test_atoi4 = ft_atoi(ft_itoa(INT_MAX));
+	printf("Expected: %d | Received: %d\n", test_atoi3, test_atoi4);
+
+	
+	int test_atoi5 = atoi("214748364755");
+	int test_atoi6 = ft_atoi("214748364755");
+	printf("Expected: %d | Received: %d\n", test_atoi5, test_atoi6);
+
+	int test_atoi7 = atoi(ft_itoa(INT_MIN));
+	int test_atoi8 = ft_atoi(ft_itoa(INT_MIN));
+	printf("Expected: %d | Received: %d\n", test_atoi7, test_atoi8);
+
+	
+	int test_atoi9 = atoi("-214748364855");
+	int test_atoi10 = ft_atoi("-214748364855");
+	printf("Expected: %d | Received: %d\n", test_atoi9, test_atoi10);
+
 	printa();
 	printaf("strlcat");
     char destcat[] = "largatixa";
@@ -377,6 +395,13 @@ int	main(void)
 	ft_putnbr_fd(-153, 1);
 	ft_putchar_fd('\n', 1);
 	write(1, "te", 2);
+
+	printa();
+	printaf("Substr");
+	char testsubstr[] = "BOM DIA";
+	printf("string: %s  sub: %s\n", testsubstr, ft_substr(testsubstr, 0, 3));
+	printf("string: %s  sub: %s\n", testsubstr, ft_substr(testsubstr, ft_strlen(testsubstr) + 1, 3));
+
 
 	return (0);
 }

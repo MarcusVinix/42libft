@@ -22,6 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr = (char *)malloc(len + 1);
 	if (substr == NULL)
 		return (NULL);
+	if (ft_strlen(s) < start)
+		return (ft_strdup(""));
 	f = 0;
 	while (f < len)
 		substr[f++] = s[i++];
