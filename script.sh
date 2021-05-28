@@ -1,4 +1,4 @@
 git add .
-git commit -m "add meus testes"
+git commit -m "change some functions"
 git push origin master
 

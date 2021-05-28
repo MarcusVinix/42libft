@@ -394,7 +394,6 @@ int	main(void)
 	ft_putchar_fd('\n', 1);
 	ft_putnbr_fd(-153, 1);
 	ft_putchar_fd('\n', 1);
-	write(1, "te", 2);
 
 	printa();
 	printaf("Substr");

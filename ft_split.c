@@ -59,7 +59,7 @@ char	**ft_split(char const *s, char c)
 	int		w;
 
 	array = (char **)malloc((count_c(s, c) + 1) * sizeof(char *));
-	if (array == NULL)
+	if (array == NULL || s == NULL)
 		return (NULL);
 	i = -1;
 	f = -1;
