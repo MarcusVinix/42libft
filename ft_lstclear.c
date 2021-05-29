@@ -6,7 +6,7 @@
 /*   By: marcus <marcus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 11:33:00 by marcus            #+#    #+#             */
-/*   Updated: 2021/05/29 12:23:25 by marcus           ###   ########.fr       */
+/*   Updated: 2021/05/29 12:59:33 by marcus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void(*del)(void *))
 	t_list	*tmp;
 
 	if (*lst == NULL)
-		return;
+		return ;
 	while (*lst)
 	{
 		tmp = (*lst)->next;

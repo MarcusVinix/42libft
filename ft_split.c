@@ -17,7 +17,7 @@ static int	count_c(char const *s, char c)
 {
 	int	i;
 	int	count;
-	int w;
+	int	w;
 
 	w = 0;
 	i = 0;

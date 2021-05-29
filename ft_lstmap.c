@@ -6,7 +6,7 @@
 /*   By: marcus <marcus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 12:03:33 by marcus            #+#    #+#             */
-/*   Updated: 2021/05/29 12:37:32 by marcus           ###   ########.fr       */
+/*   Updated: 2021/05/29 13:00:10 by marcus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	if (lst == NULL)
 		return (NULL);
 	new_lst = NULL;
-	while(lst)
+	while (lst)
 	{
 		new_elem = ft_lstnew(f(lst->content));
 		if (new_elem == NULL)

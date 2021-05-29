@@ -1,4 +1,4 @@
 git add .
-git commit -m "add function lstmap"
+git commit -m "fixing some bugs"
 git push origin master
 

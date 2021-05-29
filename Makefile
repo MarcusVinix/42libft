@@ -52,7 +52,10 @@ SRCS_BONUS =	ft_lstnew.c \
 				ft_lstadd_back.c \
 				ft_lstdelone.c \
 				ft_lstclear.c \
-				ft_lstiter.c
+				ft_lstiter.c \
+				ft_lstmap.c
+
+OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
 OBJS = $(SRCS:.c=.o)
 
@@ -66,16 +69,22 @@ CFLAGS = -Wall -Wextra -Werror
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 $(OBJS):	$(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
+
+bonus: $(OBJS_BONUS)
+	ar rcs $(NAME) $(OBJS_BONUS)
+
+$(OBJS_BONUS): $(SRCS_BONUS)
+	$(CC) $(CFLAGS) -c $(SRCS_BONUS)
 
 comp:
 	$(CC) -lbsd $(CFLAGS) $(SRCS) testes.c && ./a.out
 
 clean:
-	${RM} ${OBJS}
+	${RM} ${OBJS} ${OBJS_BONUS}
 
 fclean:	clean
 	${RM} ${NAME}
