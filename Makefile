@@ -45,6 +45,8 @@ SRCS =	ft_bzero.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c
 
+SRCS_BONUS = ft_lstnew.c
+
 OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
