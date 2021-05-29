@@ -6,7 +6,7 @@
 /*   By: mavinici <mavinici@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 11:11:11 by mavinici          #+#    #+#             */
-/*   Updated: 2021/05/22 11:11:11 by mavinici         ###   ########.fr       */
+/*   Updated: 2021/05/28 22:12:46 by mavinici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,20 @@ static int	count_c(char const *s, char c)
 {
 	int	i;
 	int	count;
+	int w;
 
+	w = 0;
 	i = 0;
-	count = 1;
+	count = 0;
 	while (s[i])
-	{
+	{	
 		if (s[i] == c)
+			w = 0;
+		else if (s[i] != c && w == 0)
+		{
+			w = 1;
 			count++;
+		}
 		i++;
 	}
 	return (count);

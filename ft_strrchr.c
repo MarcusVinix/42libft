@@ -6,7 +6,7 @@
 /*   By: mavinici <mavinici@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 18:00:36 by mavinici          #+#    #+#             */
-/*   Updated: 2021/05/15 18:00:36 by mavinici         ###   ########.fr       */
+/*   Updated: 2021/05/28 21:07:45 by mavinici         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ char	*ft_strrchr(const char *s, int c)
 	s_s = (char *)s;
 	while (s_s[i])
 	{
-		if (s_s[i] == c)
+		if (s_s[i] == (char)c)
 			pos = i;
 		i++;
 	}
-	if (s_s[i] == c)
+	if ((char)c == '\0')
 		return (s_s + i);
 	else if (pos >= 0)
 		return (s_s + pos);
