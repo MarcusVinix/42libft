@@ -19,6 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	char	*newstr;
 
+	if (!s1 || !s2)
+		return (NULL);
 	lens1 = ft_strlen(s1);
 	total = lens1 + ft_strlen(s2);
 	newstr = (char *)malloc(total + 1);
