@@ -6,7 +6,7 @@
 /*   By: marcus <marcus@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 23:18:22 by marcus            #+#    #+#             */
-/*   Updated: 2021/05/28 23:23:52 by marcus           ###   ########.fr       */
+/*   Updated: 2021/05/29 11:10:44 by marcus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*tmp;
-
-	tmp = *lst;
-	new->next = tmp;
+	if (new == NULL)
+		return;
+	if (*lst == NULL)
+		*lst = new;
+		return;
+	new->next = *lst;
 	*lst = new;
 }
