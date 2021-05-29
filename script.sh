@@ -1,4 +1,4 @@
 git add .
-git commit -m "change some functions"
+git commit -m "add function lstdelone"
 git push origin master
 
