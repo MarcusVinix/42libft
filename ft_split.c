@@ -76,7 +76,7 @@ char	**ft_split(char const *s, char c)
 		if (s[i] == c)
 			w = 0;
 		else if (s[i] != c && w == 0)
-		{	
+		{
 			w = 1;
 			array[++f] = word(s + i, c);
 			if (array[f] == NULL)

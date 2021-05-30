@@ -14,7 +14,6 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	total;
 	size_t	lens1;
 	size_t	i;
 	char	*newstr;
@@ -22,8 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	lens1 = ft_strlen(s1);
-	total = lens1 + ft_strlen(s2);
-	newstr = (char *)malloc(total + 1);
+	newstr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2)) + 1);
 	if (newstr == NULL)
 		return (NULL);
 	i = 0;
@@ -33,7 +31,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 	}
 	i = 0;
-	while (lens1 < total)
+	while (lens1 < (ft_strlen(s1) + ft_strlen(s2)))
 	{
 		newstr[lens1] = s2[i];
 		i++;
