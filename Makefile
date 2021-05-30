@@ -61,7 +61,7 @@ OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
 
-CC = clang
+CC = gcc
 RM = rm -f 
 
 CFLAGS = -Wall -Wextra -Werror
@@ -81,7 +81,7 @@ $(OBJS_BONUS): $(SRCS_BONUS)
 	$(CC) $(CFLAGS) -c $(SRCS_BONUS)
 
 comp:
-	$(CC) -lbsd $(CFLAGS) $(SRCS) testes.c && ./a.out
+	$(CC) $(CFLAGS) $(SRCS) testes.c -lbsd && ./a.out
 
 clean:
 	${RM} ${OBJS} ${OBJS_BONUS}
