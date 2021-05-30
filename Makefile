@@ -80,9 +80,6 @@ bonus: $(OBJS_BONUS)
 $(OBJS_BONUS): $(SRCS_BONUS)
 	$(CC) $(CFLAGS) -c $(SRCS_BONUS)
 
-comp:
-	$(CC) $(CFLAGS) $(SRCS) testes.c -lbsd && ./a.out
-
 clean:
 	${RM} ${OBJS} ${OBJS_BONUS}
 
