@@ -1,6 +1,7 @@
 # 42libft
 
 > This is my C functions library, my first project as a cadet at School 42 São Paulo. It has functions to manipulate strings, memory, and linked list, and I will expand this in the future when necessary.
+***
 
 ## Makefile
 
@@ -14,7 +15,9 @@
 > 3. clean - Delete all the objects(.o) of the folder.
 > 4. fclean - Make clean and delete the `libft.a`
 > 5. re - Remake the `libft.a`
->
+
+***
+
 ## Included Functions
 
 ### First section
@@ -76,6 +79,9 @@
 > **[ft_strdup](/ft_strdup.c)**  
 > Returns  a  pointer to a new string which is a duplicate of the string s.
 >
+
+***
+
 ### Second section
 
 > **[ft_substr](/ft_substr.c)**  
@@ -108,6 +114,9 @@
 > **[ft_putnbr_fd](ft_putnbr_fd.c)**  
 > Outputs the integer ’n’ to the given file descriptor.
 >
+
+***
+
 ### Bonus Section
 
 > **[ft_lstnew](/ft_lstnew.c)**  
