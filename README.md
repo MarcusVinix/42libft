@@ -6,7 +6,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 
 ### First section
 
-| Name  | Description  |
+| Name  |  Description  |
 | :------------: | :--------------- |
 | [ft_memset](/ft_memset.c) | Fills the first n bytes of the memory area pointed to by s with the constant byte c. |
 | [ft_bzero](/ft_bzero.c)   | Erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeroes, (bytes containing '\0') to that area. |
@@ -28,7 +28,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 |  [ft_calloc](/ft_calloc.c) |  Allocates size bytes and returns a pointer to the allocated memory. |
 |  [ft_strdup](/ft_strdup.c) |  Returns  a  pointer to a new string which is a duplicate of the string s. |
 
-#### SECOND SECTION
+### Second section
 
 | Name  |  Descripton  |
 | :-------------------: | :------------------- |
@@ -43,16 +43,31 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 |  [ft_putendl_fd](ft_putendl_fd.c) |  Outputs the string ’s’ to the given file descriptor, followed by a newline. |
 |  [ft_putnbr_fd](ft_putnbr_fd.c) |  Outputs the integer ’n’ to the given file descriptor. |
 
-### BONUS SECTION
+### Bonus Section
 
-| Name  |  Descripton  |
-| :-------------------: | :------------------- |
-|  [ft_lstnew](/ft_lstnew.c) | Allocates (with malloc) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. |
-|  [ft_lstadd_front](/ft_lstadd_front.c) | Adds the element ’new’ at the beginning of the list. |
-|  [ft_lstsize](/ft_lstsize.c) | Counts the number of elements in a list. |
-|  [ft_lstlast](/ft_lstlast.c) | Returns the last element of the list. |
-|  [ft_lstadd_back](/ft_lstadd_back.c) | Adds the element ’new’ at the end of the list. |
-|  [ft_lstdelone](/ft_lstdelone.c) | Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed. |
-|  [ft_lstclear](/ft_lstclear.c) | Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL. |
-|  [ft_lstiter](/ft_lstiter.c) | Iterates the list ’lst’ and applies the function ’f’ to the content of each element. |
-|  [ft_lstmap](/ft_lstmap.c) | Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed. |
+> **[ft_lstnew](/ft_lstnew.c)**  
+> Allocates (with malloc) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. 
+
+> **[ft_lstadd_front](/ft_lstadd_front.c)**  
+> Adds the element ’new’ at the beginning of the list.
+
+> **[ft_lstsize](/ft_lstsize.c)**[  
+> Counts the number of elements in a list.
+
+> **[ft_lstlast](/ft_lstlast.c)**[  
+	> Returns the last element of the list.
+
+> **[ft_lstadd_back](/ft_lstadd_back.c)**  
+> Adds the element ’new’ at the end of the list.
+
+> **[ft_lstdelone](/ft_lstdelone.c)**  
+	> Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed.
+
+> **[ft_lstclear](/ft_lstclear.c)**  
+> Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL.
+
+> **[ft_lstiter](/ft_lstiter.c)**  
+> Iterates the list ’lst’ and applies the function ’f’ to the content of each element. 
+
+> **[ft_lstmap](/ft_lstmap.c)**  
+> Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.
