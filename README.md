@@ -51,17 +51,17 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 > **[ft_lstadd_front](/ft_lstadd_front.c)**  
 > Adds the element ’new’ at the beginning of the list.
 
-> **[ft_lstsize](/ft_lstsize.c)**[  
+> **[ft_lstsize](/ft_lstsize.c)**  
 > Counts the number of elements in a list.
 
-> **[ft_lstlast](/ft_lstlast.c)**[  
-	> Returns the last element of the list.
+> **[ft_lstlast](/ft_lstlast.c)**  
+> Returns the last element of the list.
 
 > **[ft_lstadd_back](/ft_lstadd_back.c)**  
 > Adds the element ’new’ at the end of the list.
 
 > **[ft_lstdelone](/ft_lstdelone.c)**  
-	> Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed.
+> Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element. The memory of ’next’ must not be freed.
 
 > **[ft_lstclear](/ft_lstclear.c)**  
 > Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL.
