@@ -7,7 +7,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 ### First section
 
 | Name  | Description  |
-| :------------: | :--------------- |
+| :------------: | :---------------: |
 | [ft_memset](/ft_memset.c) | Fills the first n bytes of the memory area pointed to by s with the constant byte c. |
 | [ft_bzero](/ft_bzero.c)   | Erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeroes, (bytes containing '\0') to that area. |
 |  [ft_memcpy](/ft_memcpy.c) |  Copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. |
@@ -31,7 +31,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 #### SECOND SECTION
 
 | Name  |  Descripton  |
-| ------------------- | ------------------- |
+| :-------------------: | :-------------------: |
 |  [ft_substr](/ft_substr.c) |  Allocates (with malloc) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’. |
 |  [ft_strjoin](/ft_strjoin.c) |  Allocates (with malloc) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’. |
 |  [ft_strtrim](/ft_strtrim.c) |  Allocates (with malloc) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string. |
@@ -43,10 +43,10 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 |  [ft_putendl_fd](ft_putendl_fd.c) |  Outputs the string ’s’ to the given file descriptor, followed by a newline. |
 |  [ft_putnbr_fd](ft_putnbr_fd.c) |  Outputs the integer ’n’ to the given file descriptor. |
 
-#### BONUS SECTION
+### BONUS SECTION
 
 | Name  |  Descripton  |
-| ------------------- | ------------------- |
+| :-------------------: | :-------------------: |
 |  [ft_lstnew](/ft_lstnew.c) | Allocates (with malloc) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. |
 |  [ft_lstadd_front](/ft_lstadd_front.c) | Adds the element ’new’ at the beginning of the list. |
 |  [ft_lstsize](/ft_lstsize.c) | Counts the number of elements in a list. |
