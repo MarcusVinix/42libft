@@ -20,6 +20,8 @@
 
 ## Included Functions
 
+***
+
 ### First section
 
 > **[ft_memset](/ft_memset.c)**  
@@ -146,3 +148,4 @@
 > **[ft_lstmap](/ft_lstmap.c)**  
 > Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.
 >
+***
