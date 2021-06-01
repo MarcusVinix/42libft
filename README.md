@@ -20,8 +20,6 @@
 
 ## Included Functions
 
-***
-
 ### First section
 
 > **[ft_memset](/ft_memset.c)**  
