@@ -1,7 +1,20 @@
 # 42libft
 
-This is my C functions library, my first project as a cadet at School 42 São Paulo. It has functions to manipulate strings, memory, and linked list, and I will expand this in the future when necessary.
+> This is my C functions library, my first project as a cadet at School 42 São Paulo. It has functions to manipulate strings, memory, and linked list, and I will expand this in the future when necessary.
 
+## Makefile
+
+> **[Makefile](/Makefile)**  
+> The Makefile will compile the static library `libft.a`  
+>
+> **Rules**  
+>
+> 1. all - Make the `libft.a` of the mandatory functions
+> 2. bonus - Make the `libft.a` of the bonus functions
+> 3. clean - Delete all the objects(.o) of the folder.
+> 4. fclean - Make clean and delete the `libft.a`
+> 5. re - Remake the `libft.a`
+>
 ## Included Functions
 
 ### First section
@@ -62,7 +75,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 >
 > **[ft_strdup](/ft_strdup.c)**  
 > Returns  a  pointer to a new string which is a duplicate of the string s.
-
+>
 ### Second section
 
 > **[ft_substr](/ft_substr.c)**  
@@ -94,7 +107,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 >
 > **[ft_putnbr_fd](ft_putnbr_fd.c)**  
 > Outputs the integer ’n’ to the given file descriptor.
-
+>
 ### Bonus Section
 
 > **[ft_lstnew](/ft_lstnew.c)**  
@@ -123,3 +136,4 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 >
 > **[ft_lstmap](/ft_lstmap.c)**  
 > Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.
+>
