@@ -98,7 +98,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 ### Bonus Section
 
 > **[ft_lstnew](/ft_lstnew.c)**  
-> Allocates (with malloc) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. 
+> Allocates (with malloc) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL.
 >
 > **[ft_lstadd_front](/ft_lstadd_front.c)**  
 > Adds the element ’new’ at the beginning of the list.
@@ -119,7 +119,7 @@ This is my C functions library, my first project as a cadet at School 42 São Pa
 > Deletes and frees the given element and every successor of that element, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL.
 >
 > **[ft_lstiter](/ft_lstiter.c)**  
-> Iterates the list ’lst’ and applies the function ’f’ to the content of each element. 
+> Iterates the list ’lst’ and applies the function ’f’ to the content of each element.
 >
 > **[ft_lstmap](/ft_lstmap.c)**  
 > Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.
