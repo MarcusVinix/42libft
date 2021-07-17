@@ -147,3 +147,10 @@
 > Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.
 >
 ***
+
+### Functions necessary for others projects
+
+>**[ft_putnbr_base_fd](/ft_putnbr_base_fd.c)**  
+> Outputs the integer ’n’ converted for the base passed to the given file descriptor.  
+>**[ft_itoa_base_fd](/ft_itoa_base_fd.c)**  
+> Allocates (with malloc) and returns a string converted for the base received representing the integer received as an argument. Negative numbers must be handled.
