@@ -19,6 +19,8 @@
 ***
 
 ## Included Functions
+The functions is separate in base of they uses or standard library.
+Some of they is like the originals but others is my specific implementation.
 
 ### CTYPE
 
